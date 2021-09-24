@@ -1,3 +1,4 @@
 {
-    "editor.codeLensFontFamily": "Comic Sans Ms"
+    "editor.codeLensFontFamily": "Comic Sans Ms",
+    "liveServer.settings.port": 5501
 }
