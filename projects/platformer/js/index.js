@@ -62,5 +62,7 @@ $(document).ready(function () {
         game.score.text = 'Score: ' + (parseInt(/\s+(\S*)$/.exec(game.score.text)[1], 10) + collectable.type.points);
         collectable.kill();
     }
+function drawImg(src,x,y,w,h){
 
+}
 });
