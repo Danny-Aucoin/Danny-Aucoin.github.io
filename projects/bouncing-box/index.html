@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
+
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RL56wlLMXhO-__U5zHD8mfHXjGWzrerDmCsHya_5tFuWiNvnVEmeAVjX1X_CWXeMjYI:https://www.downsights.com/wp-content/uploads/2020/11/Jugger-Nog-Perk-Machine.jpg&usqp=CAU);
+			no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		
+		}
+
 		.box {
 			width: 70px;
 			height: 70px;
-			background-image: img(tanjiroooo.png);
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7OdQIePGr8LXeejyWJPYygdzqEFsb6sFIyWBIquHlDqLN2d0JLmG0EYkC8jha77yHEs:https://d1w8c6s6gmwlek.cloudfront.net/someteeforyou.com/overlays/234/786/23478680.png&usqp=CAU);
+			background-size: cover;
+			color: slateblue;
 			font-size: 300%;
+			color: rebeccapurple;
 			text-align: center;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 60px;  /* <--- Change me! */
+			left: 60px;
+			/* <--- Change me! */
 		}
-		.board{
+
+		.board {
 			height: 100vh;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
+
 <body class="board">
 	<!-- HTML for the box -->
+    
+	</audio>
 	<div class="box">?</div>
 
+
 	<script>
-		(function(){
+		(function () {
 			'use strict'
 			/* global jQuery */
 
 			//////////////////////////////////////////////////////////////////
 			/////////////////// SETUP DO NOT DELETE //////////////////////////
 			//////////////////////////////////////////////////////////////////
-			
+
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
-			
+
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
@@ -59,19 +80,18 @@
 			//////////////////////////////////////////////////////////////////
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
 			//////////////////////////////////////////////////////////////////
-			
-			// TODO 2 - Variable declarations 
-			
 
-			
+			// TODO 2 - Variable declarations 
+			var locationX = 50
+
+
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
-				(moveBoxTo 100, 70)
-
+				moveBoxTo(locationX);
 			};
 
 			/* 
@@ -80,11 +100,13 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+
 
 
 			};
 		})();
 	</script>
+	
 </body>
+
 </html>
