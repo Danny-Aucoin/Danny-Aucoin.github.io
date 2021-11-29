@@ -10,8 +10,8 @@
 	<style>
 		p {
 			font-family: cursive;
-			color: blueviolet;
-			text-align: center;
+			color: black;
+			text-align: right;
 		}
 
 		body {
@@ -52,7 +52,8 @@
 	<iframe width="200" height="90" src="https://www.youtube.com/embed/qUmeV-yKyhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	<!-- HTML for the box -->
-	<p class="Font">be sure to click the box to the top left of the screen for the music!</p>
+	<p class="Font">be sure to click the box to 
+		the top left of the screen for the music!</p>
 	<div class="box">?</div>
 
 
@@ -62,7 +63,7 @@
 			/* global jQuery */
 
 			//////////////////////////////////////////////////////////////////
-			/////////////////// SETUP DO NOT DELETE //////////////////////////
+			/////////////////// SETUP DO NOT DELETE//////////////////////////
 			//////////////////////////////////////////////////////////////////
 
 			var box = jQuery('.box');	// reference to the HTML .box element
@@ -92,7 +93,7 @@
 			// TODO 2 - Variable declarations 
 			var locationX = 0
 			var points = 0
-			var speedX = 10
+			var speedX = 4
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -101,7 +102,8 @@
 			function update() {
 
 				moveBoxTo(locationX);
-				locationX += speedX;
+					locationX += speedX
+				
 			};
 
 			/* 
@@ -112,7 +114,7 @@
 			function handleBoxClick() {
 				locationX = 0
 				changeBoxText(points = points + 1)
- l
+  speedX++
 			};
 		})();
 	</script>
