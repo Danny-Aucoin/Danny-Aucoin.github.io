@@ -49,9 +49,7 @@
 </head>
 
 <body class="board">
-	<iframe width="90" height="85" src="https://www.youtube.com/watch?v=qUmeV-yKyhQ" title="YouTube video player"
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen></iframe>
+	<iframe width="200" height="90" src="https://www.youtube.com/embed/qUmeV-yKyhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	<!-- HTML for the box -->
 	<p class="Font">be sure to click the box to the top left of the screen for the music!</p>
@@ -94,7 +92,7 @@
 			// TODO 2 - Variable declarations 
 			var locationX = 0
 			var points = 0
-			var speedX = 8
+			var speedX = 10
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -103,7 +101,7 @@
 			function update() {
 
 				moveBoxTo(locationX);
-				locationX = locationX + speedX;
+				locationX += speedX;
 			};
 
 			/* 
@@ -114,7 +112,7 @@
 			function handleBoxClick() {
 				locationX = 0
 				changeBoxText(points = points + 1)
-
+ l
 			};
 		})();
 	</script>
