@@ -49,10 +49,13 @@
 </head>
 
 <body class="board">
-	<iframe width="200" height="90" src="https://www.youtube.com/embed/qUmeV-yKyhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="250" height="100" src="https://www.youtube.com/embed/RSUSY3IjgCo" title="YouTube video player"
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+		n></iframe>
+	
 
 	<!-- HTML for the box -->
-	<p class="Font">be sure to click the box to 
+	<p class="Font">be sure to click the box to
 		the top left of the screen for the music!</p>
 	<div class="box">?</div>
 
@@ -93,7 +96,8 @@
 			// TODO 2 - Variable declarations 
 			var locationX = 0
 			var points = 0
-			var speedX = 4
+			var iAmSpeed = 4
+		
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -102,10 +106,18 @@
 			function update() {
 
 				moveBoxTo(locationX);
-					locationX += speedX
-				
-			};
+				locationX += iAmSpeed
+		
 
+				if (locationX >= boardWidth) {
+					console.log('We need to turn this around')
+					iAmSpeed = iAmSpeed * (-1)
+
+				}
+				if (locationX <= 0) {
+					iAmSpeed = iAmSpeed * (-1)
+				}
+			};
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
@@ -114,7 +126,7 @@
 			function handleBoxClick() {
 				locationX = 0
 				changeBoxText(points = points + 1)
-  speedX++
+				iAmSpeed++
 			};
 		})();
 	</script>
