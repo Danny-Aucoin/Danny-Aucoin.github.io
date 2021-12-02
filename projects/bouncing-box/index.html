@@ -49,10 +49,10 @@
 </head>
 
 <body class="board">
-	<iframe width="250" height="100" src="https://www.youtube.com/embed/RSUSY3IjgCo" title="YouTube video player"
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
-		n></iframe>
 	
+	<iframe width="250" height="100" src="https://www.youtube.com/embed/RSUSY3IjgCo" title="YouTube video player"
+	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+	n></iframe>
 
 	<!-- HTML for the box -->
 	<p class="Font">be sure to click the box to
@@ -135,10 +135,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				locationX = 0
+				locationX =  Math.random() * 100;
 				changeBoxText(points = points + 1)
 				iAmSpeed++
-				locationY = 0
+				locationY = Math.random() * 100;
 				iAmSpeedy++
 			};
 		})();
