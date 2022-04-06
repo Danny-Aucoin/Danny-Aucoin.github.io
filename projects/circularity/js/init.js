@@ -39,7 +39,7 @@ var init = function (window) {
      drawCircle()
      drawCircle() 
     }
-    return
+
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -53,7 +53,7 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the circle's position //
         //* for (counts = 0; counts < 21; counts + 5){
-            //physikz.updatePosition(circles[counts- 5]);
+            //physikz.updatePosition(circles[]);
             //physikz.updatePosition(circles[counts- 4]);
             //physikz.updatePosition(circles[counts- 3]);
             //physikz.updatePosition(circles[counts- 2]);
